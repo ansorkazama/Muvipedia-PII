@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+*.iml
+
+# signing for release version
+gradle/.signing.properties.swp
+gradle/signing.properties
+
