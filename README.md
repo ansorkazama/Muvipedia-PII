@@ -1,8 +1,8 @@
 # Muvipedia
-Android movie info browsing app, presents content from TheMovieDb.org.
+Android movie info browsing app version 2, presents content from TheMovieDb.org
 
 ## History
-This application was submitted by Muhammad Ansharullah (ansorkazama@gmail.com) as the project:<b>Popular Movies-Phase 1</b> to compete the requirements of the Associate Android Developer Fast Track Nanodegree Program course.
+This application was submitted by Muhammad Ansharullah (ansorkazama@gmail.com) as the project:<b>Popular Movies-Phase 2</b> to compete the requirements of the Associate Android Developer Fast Track Nanodegree Program course.
 
 ## Building this application with Android Studio - prerequisite
 
@@ -13,6 +13,48 @@ This application was submitted by Muhammad Ansharullah (ansorkazama@gmail.com) a
 with this identifier (edit in your key between the quotes):
 
      TheMovieDbApiToken="12341234123412341234"
+
+## Criteria
+
+The app spesification checks off the following requirements that were demanded by the Udacity Review teams:
+
+**Common Project Requirements**
+- [X] App is written solely in the Java Programming Language.
+- [X] App conforms to common standards found in the [Android Nanodegree General Project Guidelines](http://udacity.github.io/android-nanodegree-guidelines/core.html)
+
+**User Interface - Layout**
+
+- [X] UI contains an element (e.g., a spinner or settings menu) to toggle the sort order of the movies by: **most popular, highest rated, and favorites**
+- [X] Movies are displayed in the main layout via a grid of their corresponding movie poster thumbnails
+- [X] UI contains a screen for displaying the details for a selected movie
+- [X] Movie Details layout contains title, release date, movie poster, vote average, and plot synopsis.
+- [X] Movie Details layout contains a section for displaying trailer videos and user reviews
+
+**User Interface - Function**
+- [X] When a user changes the sort criteria (**most popular, highest rated, and favorites**) the main view gets updated correctly.
+- [X] When a movie poster thumbnail is selected, the movie details screen is launched [Phone] or displayed in a fragment [Tablet]
+- [X] When a trailer is selected, app uses an Intent to launch the trailer
+- [X] In the movies detail screen, a user can tap a button(for example, a star) to mark it as a Favorite
+
+**Network API Implementation**
+- [X] In a background thread, app queries the /movie/popular or /movie/top_rated API for the sort criteria specified in the settings menu.
+- [X] App requests for related videos for a selected movie via the /movie/{id}/videos endpoint in a background thread and displays those details when the user selects a movie.
+- [X] App requests for user reviews for a selected movie via the /movie/{id}/reviews endpoint in a background thread and displays those details when the user selects a movie.
+
+**Data Persistence**
+- [X] The titles and ids of the user's favorite movies are stored in a **ContentProvider** backed by a SQLite database. This **ContentProvider** is updated whenever the user favorites or unfavorites a movie.
+- [X] When the "favorites" setting option is selected, the main view displays the entire favorites collection based on movie ids stored in the **ContentProvider**.
+
+
+#### Extended Criteria
+
+**ContentProvider**
+- [X] Extend the favorites **ContentProvider** to store the movie poster, synopsis, user rating, and release date, and display them even when offline.
+- [X] Implement sharing functionality to allow the user to share the first trailer’s **YouTube** URL from the movie details screen.
+
+
+
+
 ### License and Disclaimers
 
 Portions of this page are modifications based on work created and
