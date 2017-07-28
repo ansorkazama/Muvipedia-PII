@@ -102,3 +102,6 @@ The truly excellent Picasso library took all the work out of downloading, cachin
 A big "Thank You!" to the good folks at Square for their work.   Here is the web page link or just search for "Picasso" on GitHub:
 
 http://square.github.io/picasso/
+
+
+made with 💜 from Indonesia
